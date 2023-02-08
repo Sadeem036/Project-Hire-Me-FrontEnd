@@ -58,6 +58,7 @@ const Signup = () => {
       />
       <Cities onChange={handleChange} name="emp_city" value={inputs.emp_city} />
       <FormButton name="Signup" type="submit"/>
+      <p>already have an account?</p><a onClick={()=>{router.push("emp-login")}}>Login</a>
     </form>
   );
 };

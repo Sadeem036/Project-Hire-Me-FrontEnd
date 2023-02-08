@@ -4,9 +4,10 @@ import InputField from "../input-field/input-field";
 import Language from "../language/language";
 import FormButton from "../button/button";
 import axios from "axios";
-
+import Router, { useRouter } from "next/router";
 
 const SignupCustomer = () => {
+    const router = useRouter()
   const [inputs, setInputs] = useState({});
   const handleChange = (event) => {
     const name = event.target.name;
@@ -59,6 +60,7 @@ const SignupCustomer = () => {
       />
       <Cities onChange={handleChange} name="customer_city" value={inputs.customer_city} />
       <FormButton name="Signup" type="submit"/>
+      <p>already have an account?</p><a onClick={()=>{router.push("customer-login")}}>Login</a>
     </form>
   );
 };

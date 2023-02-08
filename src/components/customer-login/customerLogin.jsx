@@ -3,8 +3,10 @@ import InputField from '../input-field/input-field';
 import FormButton from '../button/button';
 import axios from 'axios';
 import Cookies from 'js-cookie';
+import Router, { useRouter } from 'next/router';
 
 const CustomerLogin = () => {
+  const router = useRouter()
     const [inputs, setInputs] = useState({});
     const handleChangeLogin = (event) => {
       const name = event.target.name;
@@ -20,10 +22,17 @@ const CustomerLogin = () => {
         data: inputs
       })
         .then((res) => {
+          if(res.length > 0){
             Cookies.set("Token",res.data.accessToken)
-           const [userData] = res.data.user 
-           const {customer_id} = userData
-           Cookies.set("User",customer_id)  
+            const [userData] = res.data.user 
+            const {customer_id} = userData
+            Cookies.set("User",customer_id) 
+            router.push("/customer")
+          }
+          else{
+            alert("Customer not found")
+          }
+            
         })
         .catch((error) => console.log(error));
     };
