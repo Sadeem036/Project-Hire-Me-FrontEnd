@@ -9,15 +9,37 @@
     justify-content: space-evenly;
 }
 
-.button {
-    background-color: rgb(99, 00, 99);
+.button1 {
+    background-color: rgb(20, 7, 124);
+    border-color:rgb(20, 7, 124);
+    border-radius: 15px;
     margin: 30px;
     width: 170px;
     height: 150px;
     font-size: 30px;
     color: white;
 }
+.button2 {
+    background-color: rgb(228, 3, 3);
+    border-radius: 15px;
+    border-color:rgb(228, 3, 3);
+    margin: 30px;
+    width: 170px;
+    height: 150px;
+    font-size: 30px;
+    color: white;
+}
+.button3{
+    background-color: rgb(34, 176, 8);
+    border-color:rgb(34, 176, 8);
 
+    border-radius: 15px;
+    margin: 30px;
+    width: 170px;
+    height: 150px;
+    font-size: 30px;
+    color: white;
+}
 .services {
     margin-left: 300px;
     justify-content: center;

@@ -1,11 +1,9 @@
-import NavBar from "@/components/Employee/emp"
-// import SideBar from "@/components/Employee/emp"
-// import Usernav from "@/components/sidenav/sidenav"
+import User from "@/components/Employee/emp"
 export default function Employee() {
   return (
     <>
     <div>
-    <NavBar/>
+    <User/>
     </div>
    </>
   )
