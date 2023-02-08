@@ -3,7 +3,7 @@ import React from 'react'
 const Cities = (props) => {
   return (
     <div>
-    <select name="Location" id="Location" required value={props.value}>
+    <select name={props.name} onChange={props.onChange} required value={props.value}>
     <option value="" disabled selected>Select The City</option>
     <option value="Islamabad">Islamabad</option>
     <option value="" disabled>Punjab Cities</option>

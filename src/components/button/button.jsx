@@ -4,7 +4,7 @@ import { Button } from '@mui/material'
 const FormButton = (props) => {
   return (
     <div>
-    <Button type={props.type} variant="contained" color="success">
+    <Button onClick={props.onClick} type={props.type} variant="contained" color="secondary">
   {props.name}
 </Button>
       

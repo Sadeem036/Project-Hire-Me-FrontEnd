@@ -4,7 +4,7 @@ import { TextField } from '@mui/material'
 const InputField = (props) => {
   return (
     <div>
-    <TextField value={props.value} type={props.type} id="outlined-basic" label={props.name} variant="outlined" />  
+    <TextField onChange={props.onChange} value={props.value} name={props.name} type={props.type} id="outlined-basic" label={props.label} variant="outlined" />  
     </div>
   )
 }
