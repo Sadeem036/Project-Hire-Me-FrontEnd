@@ -5,6 +5,7 @@ import style from '@/components/Employee/emp.module.css'
 import Footer from '../footer/footer';
 export default function User() {
     return (
+        <>
         <div className={style.container} >
             <div>
                 <UserNav />
@@ -19,9 +20,11 @@ export default function User() {
                     <Userstatus />
                 </div>
             </div>
-
-            <div><Footer /></div>
+            <div className={style.shows}>
+                <Footer />
+            </div>
         </div>
+        </>
 
     )
 }

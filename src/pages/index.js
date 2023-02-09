@@ -1,3 +1,5 @@
+
+
 import Landingpage from "@/components/Landingpage/landing";
 
 export default function Home() {
@@ -6,7 +8,7 @@ export default function Home() {
     <div >
       <Landingpage/>
     </div>
-    
    </>
+      
   )
 }

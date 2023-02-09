@@ -3,10 +3,10 @@ import style from '@/components/sidenav/sidenav.module.css'
 
 export default function SideBar() {
     return (
-        <div >
+        
             <div className={style.container}>
                 <ul>
-                    <h1>Name</h1>
+                    <h1 className={style.header}>Profile </h1>
                     <li><a href="">Notifications</a></li>
                     <li><a href="">Reviews</a></li>
                     <li><a href="">Complaint</a></li>
@@ -14,6 +14,6 @@ export default function SideBar() {
                     <li><a href="">Log out</a></li>
                 </ul>
             </div>
-        </div>
+       
     )
 }
