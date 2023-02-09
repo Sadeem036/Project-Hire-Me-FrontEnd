@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useReducer } from 'react'
 import FormButton from '../button/button'
 import InputField from '../input-field/input-field'
 import axios from 'axios'
 import Cookies from 'js-cookie'
 import { useRouter } from 'next/router'
+import Employee from '@/pages/employee'
 
 const Login = () => {
     const [inputs, setInputs] = useState({}) ;
@@ -15,30 +16,29 @@ const Login = () => {
   };
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(inputs);
     axios({
       method: "post",
       url: "http://localhost:5000/users/log-in",
       data: inputs
     })
-      .then((res) => {
-        if(res.length > 0){
-          console.log(res)
+    .then((res) => {
+      const userData = res?.data?.user 
+      if(userData == undefined || userData == null){
+        console.log("User not found");
+        alert("error")
+      }else {
         Cookies.set("Token",res.data.accessToken)
         const [userData] = res.data.user 
         const {emp_id} = userData
         Cookies.set("User",emp_id)
         router.push("/employee")
-        }
-        else{
-          alert("User not found")
-        } 
-      })
-      .catch((error) => console.log(error));
+      }
+    })
+    .catch((error) => console.log(error));
   };
-
-  return (
-    <form onSubmit={handleSubmit}>
+  
+    return (
+      <form onSubmit={handleSubmit}>
     <InputField onChange={handleChangeLogin}
         label="Phone Number"
         name="emp_phone"
@@ -54,7 +54,8 @@ const Login = () => {
         />
     <FormButton name="Login" type="submit" />
     </form>
-  )
-}
+    )
+  }
+
 
 export default Login

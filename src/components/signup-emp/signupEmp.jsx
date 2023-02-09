@@ -24,7 +24,10 @@ const Signup = () => {
       url: "http://localhost:5000/user/sign-up",
       data:  inputs
     })
-      .then((res) => console.log(res))
+      .then((res) =>{ 
+        console.log(res)
+        alert("Employee Registered")
+      })
       .catch((error) => console.log(error));
   };
 
@@ -58,7 +61,7 @@ const Signup = () => {
       />
       <Cities onChange={handleChange} name="emp_city" value={inputs.emp_city} />
       <FormButton name="Signup" type="submit"/>
-      <p>already have an account?</p><a onClick={()=>{router.push("emp-login")}}>Login</a>
+      <p>already have an account?</p><a onClick={()=>{router.push("Employee")}}>Login</a>
     </form>
   );
 };

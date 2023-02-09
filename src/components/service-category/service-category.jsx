@@ -25,21 +25,37 @@ const ServiceCategory = () => {
 
   return (
     <div>
+    <select>
     
     {category.map(data=>{
         return(
             <>
-            <li key={data.service_category_id}>{data.service_category_name}</li>
-            <FormButton name="Show sub-category" type="submit" 
-            onClick={()=> {
-                Cookies.set("category_id",data.service_category_id)
-                }}/>
+            
+            <option><p>{data.service_category_id} </p><p>{data.service_category_name}</p></option>
+            
             </>
         )
     })}
+    </select>
       
     </div>
   )
 }
 
 export default ServiceCategory
+
+
+
+
+
+// {category.map(data=>{
+//     return(
+//         <>
+//         <li key={data.service_category_id}>{data.service_category_name}</li>
+//         <FormButton name="Show sub-category" type="submit" 
+//         onClick={()=> {
+//             Cookies.set("category_id",data.service_category_id)
+//             }}/>
+//         </>
+//     )
+// })}

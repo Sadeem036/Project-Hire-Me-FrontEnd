@@ -25,7 +25,7 @@ const SignupCustomer = () => {
     })
       .then((res) => {
         console.log(res)
-        alert("User Registered")
+        alert("Customer Registered")
     })
       .catch((error) => console.log(error));
   };
