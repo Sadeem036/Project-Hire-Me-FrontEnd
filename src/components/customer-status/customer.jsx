@@ -1,7 +1,6 @@
 import React from 'react'
-import style from '../Stauts/status.module.css'
-
-export default function Userstatus() {
+import style from '@/components/customer-status/customer.module.css'
+export default function CustomerStatus() {
     return (
         <div className={style.container}>
             <div className={style.status} >
@@ -13,7 +12,7 @@ export default function Userstatus() {
                 <button className={style.button3}>Completed</button>
             </div>
             <div className={style.services}>
-                <button className={style.service}>+ Add Service</button>
+                <button className={style.service}>Select Services</button>
             </div>
         </div>
     )

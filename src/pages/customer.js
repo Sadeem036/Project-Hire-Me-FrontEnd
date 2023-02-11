@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import SideBar from "../components/sidenav/sidenav";
 import UserNav from "../components/userNav/usernav";
 import Userstatus from "../components/Stauts/Status";
@@ -27,5 +28,15 @@ export default function Customer() {
      
     </div>
    
+=======
+import CustomerSkills from "@/components/Customer/customer"
+export default function E() {
+  return (
+    <>
+    <div>
+    <CustomerSkills/>
+    </div>
+   </>
+>>>>>>> 36fa7b34995398a044d6b4029c3daa0d9d23351e
   )
 }

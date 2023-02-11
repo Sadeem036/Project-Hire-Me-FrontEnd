@@ -29,6 +29,7 @@ const GetNotification = () => {
     <div>
    {notification.map((data)=>{
     return(
+        
         <li key={data.notification_id}>{data.notification_content}</li>
     )
    })}

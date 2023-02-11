@@ -1,11 +1,10 @@
-
-import SubCategory from '@/components/sub-category/sub-category'
+import Subservices from '@/components/subcategory/subservices'
 import React from 'react'
 
 const SubCategoryPage = () => {
   return (
     <div>
-    <SubCategory/>
+    <Subservices/>
       
     </div>
   )
