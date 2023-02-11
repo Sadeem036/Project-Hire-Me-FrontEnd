@@ -5,7 +5,7 @@ export default function Footer() {
         <div className={style.container}>
             <div className={style.about}>
                 <h1>About</h1>
-                <p>Hire Me is Pakistan's most reputable top Handyman Services provider and one of the first freelancing sites. Our mission is to accomplish two goals with single action. We offer productivity in both customer and worker's (fixers) lives.</p>
+                <p className={style.paragraph}>Hire Me is Pakistan's most reputable top Handyman Services provider and one of the first freelancing sites. Our mission is to accomplish two goals with single action. We offer productivity in both customer and worker's (fixers) lives.</p>
                 <div>
                     <div className={style.phone}>
                         <div>phone-icon</div>

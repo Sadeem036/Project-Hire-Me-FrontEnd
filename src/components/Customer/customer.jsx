@@ -1,9 +1,9 @@
 import SideBar from '../sidenav/sidenav';
-import Userstatus from '../Stauts/Status';
 import UserNav from "../userNav/usernav";
-import style from '@/components/Employee/emp.module.css'
 import Footer from '../footer/footer';
-export default function User() {
+import CustomerStatus from '../customer-status/customer';
+import style from '@/components/Customer/customer.module.css'
+export default function CustomerSkills() {
     return (
         <>
         <div className={style.container} >
@@ -17,7 +17,7 @@ export default function User() {
                 </div>
  
                 <div>
-                    <Userstatus  />
+                    <CustomerStatus/>
                 </div>
             </div>
             <div className={style.shows}>

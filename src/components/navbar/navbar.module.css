@@ -13,9 +13,8 @@
     margin-left: -8px;
   }
   .container .logo{
-    width: 80px;
-    height: 70px;
-    display: flex;
+    width: 90px;
+    height: 80px;
     margin-left: 50px;
   }
   .text{
@@ -69,6 +68,7 @@
 }
   .button{
     display: flex;
+    /* color:black ; */
     border: 1 px solid purple;
   }
   .container .button .customer{

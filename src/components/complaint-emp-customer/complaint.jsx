@@ -1,9 +1,9 @@
 import SideBar from '../sidenav/sidenav';
-import Userstatus from '../Stauts/Status';
 import UserNav from "../userNav/usernav";
-import style from '@/components/Employee/emp.module.css'
 import Footer from '../footer/footer';
-export default function User() {
+import style from '@/components/complaint-emp-customer/complaint.module.css'
+import GetComplaint from '../complain/get-complain';
+export default function UserComplaint() {
     return (
         <>
         <div className={style.container} >
@@ -17,7 +17,7 @@ export default function User() {
                 </div>
  
                 <div>
-                    <Userstatus  />
+                    <GetComplaint/>
                 </div>
             </div>
             <div className={style.shows}>

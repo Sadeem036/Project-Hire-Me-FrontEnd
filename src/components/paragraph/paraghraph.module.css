@@ -2,18 +2,20 @@
     height: auto;
     margin-bottom: 40px;
     display: flex;
+    margin-left: 10px;
     
 }
 .decoration{
     color: rgb(99, 00, 99);
     font-size: 20px;
+    text-decoration: none;
 }
 .logo{
     height: 800px;
     width: 700px;
 }
 .h1{
-    font-size: 50px;
+    font-size: 40px;
 }
 .paraghraph{
     font-size: 18px;

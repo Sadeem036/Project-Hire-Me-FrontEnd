@@ -1,3 +1,14 @@
+.service {
+    background-color: rgb(99, 00, 99);
+    margin: 30px;
+    width:250px;
+    height: 70px;
+    border-radius: 10px;
+    font-size: 30px;
+    color: white;
+    margin-left:10px
+}
+
 
 
 .status {
@@ -44,13 +55,4 @@
     justify-content: center;
     display: flex;
 }
-.service {
-    background-color: rgb(99, 00, 99);
-    margin: 30px;
-    width:250px;
-    height: 70px;
-    border-radius: 10px;
-    font-size: 30px;
-    color: white;
-    margin-left:10px
-}
+

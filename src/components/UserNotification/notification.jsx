@@ -1,9 +1,9 @@
 import SideBar from '../sidenav/sidenav';
-import Userstatus from '../Stauts/Status';
 import UserNav from "../userNav/usernav";
-import style from '@/components/Employee/emp.module.css'
 import Footer from '../footer/footer';
-export default function User() {
+import style from '@/components/UserNotification/notification.module.css'
+import GetNotification from '../notification/notification';
+export default function Usernotification() {
     return (
         <>
         <div className={style.container} >
@@ -17,7 +17,7 @@ export default function User() {
                 </div>
  
                 <div>
-                    <Userstatus  />
+                    <GetNotification/>
                 </div>
             </div>
             <div className={style.shows}>

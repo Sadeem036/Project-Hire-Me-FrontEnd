@@ -1,6 +1,7 @@
 import style from '@/components/userNav/usernav.module.css'
 import logoImage from '../../../public/logo.jpg'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function UserNav() {
     return (
@@ -14,9 +15,9 @@ export default function UserNav() {
         
             <div className={style.nav}>
                 <ul className={style.ul}>
-                    <li className={style.li}><a href="">Home</a></li>
-                    <li className={style.li}><a href="">Contact</a></li>
-                    <li className={style.li}><a href="">About</a></li>
+                    <li className={style.li}><Link  href="/">Home</Link></li>
+                    <li className={style.li}><Link href="">About Us</Link></li>
+                    <li className={style.li}><Link href="/contact">Contact Us</Link></li>
                 </ul>
             </div>
         </div>
