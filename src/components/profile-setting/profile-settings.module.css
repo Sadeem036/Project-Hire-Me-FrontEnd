@@ -1,0 +1,19 @@
+.container{
+
+    height:700px;
+}
+.paragraph{
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: flex;
+}
+
+.btn{
+    display: flex;
+    margin-top: 25px;
+    align-items: center;
+    justify-content: center;
+}

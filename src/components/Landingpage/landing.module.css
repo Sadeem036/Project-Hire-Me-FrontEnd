@@ -1,0 +1,9 @@
+.container{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.shows{
+    margin-top: -23px;
+    margin-left: -20px;
+}
