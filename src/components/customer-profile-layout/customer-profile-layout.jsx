@@ -1,9 +1,9 @@
-import SideBar from '../sidenav/sidenav';
+import CustomerSideBar from "../customer-side-bar/customer-side-bar";
 import UserNav from "../userNav/usernav";
 import Footer from '../footer/footer';
 import style from '../profile-layout/profile.module.css'
-import Settings from '../emp-settings/settings';
-export default function UpdateLayout() {
+import CustomerSettings from '../customer-settings/customer-settings';
+export default function CustomerProfileLayout() {
     return (
         <>
             <div className={style.container} >
@@ -12,11 +12,11 @@ export default function UpdateLayout() {
                 </div>
                 <div className={style.show}>
                     <div>
-                        <SideBar />
+                        <CustomerSideBar />
                     </div>
                     <div className={style.setting}>
                         <div className={style.settings}>
-                           <Settings/>
+                           <CustomerSettings/>
                         </div>
                     </div>
                 </div>

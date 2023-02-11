@@ -1,11 +1,10 @@
 import React, { useEffect, useState,useMemo } from "react";
 import axios from "axios";
 import Cookies from "js-cookie";
-import FormButton from "../button/button";
 
 const ServiceCategory = () => {
   const [category, setCategory] = useState([]);
-  const userToken = Cookies.get("Token");
+  const userToken = Cookies.get("empToken");
 
   useEffect(() => {
     axios
@@ -67,7 +66,10 @@ const ServiceCategory = () => {
       </select>
       <div>
         {subCategory.map((data) => {
-          return <li key={data.sub_category_id}>{data.sub_category_name}</li>;
+          return (
+            <>
+            <p key={data.sub_category_id}>{data.sub_category_id} {data.sub_category_name}</p>
+            </> )
         })}
       </div>
     </div>
@@ -76,14 +78,3 @@ const ServiceCategory = () => {
 
 export default ServiceCategory;
 
-// {category.map(data=>{
-//     return(
-//         <>
-//         <li key={data.service_category_id}>{data.service_category_name}</li>
-//         <FormButton name="Show sub-category" type="submit"
-//         onClick={()=> {
-//             Cookies.set("category_id",data.service_category_id)
-//             }}/>
-//         </>
-//     )
-// })}

@@ -1,12 +1,15 @@
 import Cookies from 'js-cookie'
 import React ,{useState} from 'react'
 import axios from 'axios'
+import CustomInput from '../custominput/custominput'
+import style from "../post-complaint/post-complaint.module.css"
+import CustomButton from '../custombutton/custombutton'
 
 const Postcomplaint = () => {
   
 const [input, setInput]=  useState([])
 
-const userToken = Cookies.get("Token")  
+const userToken = Cookies.get("empToken")  
 console.log(userToken);
 
 const onClickHandler =()=>{
@@ -28,12 +31,12 @@ const onClickHandler =()=>{
 }
   
 return (
-   <div>
-
-    <input type="text" value={input} onChange={(e)=>setInput(e.target.value)}
+   <div className={style.settings} >
+    <div className={style.setting}>
+    <CustomInput value={input} onChange={(e)=>setInput(e.target.value)}
     />
-    <button onClick={onClickHandler}>Submit Complaint</button>
-
+    <CustomButton onClick={onClickHandler} name="Submit Complaint"/>
+    </div>
    </div>
   
   )  

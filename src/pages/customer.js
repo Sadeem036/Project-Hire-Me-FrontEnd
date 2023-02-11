@@ -1,9 +1,8 @@
-<<<<<<< HEAD
-import SideBar from "../components/sidenav/sidenav";
+import CustomerSideBar from "../components/customer-side-bar/customer-side-bar";
 import UserNav from "../components/userNav/usernav";
-import Userstatus from "../components/Stauts/Status";
 import Footer from "../components/footer/footer";
 import style from '../styles/emp.module.css'
+import CustomerStatus from "../components/customer-status/customer";
 
 export default function Customer() {
   return (
@@ -15,11 +14,11 @@ export default function Customer() {
             <div className={style.show}>
 
                 <div>
-                    <SideBar href="/customer-settings-page" complaintPage="/post-complaint"/>
+                    <CustomerSideBar href="/customer-settings-page" complaintPage="/post-complaint"/>
                 </div>
 
                 <div>
-                    <Userstatus />
+                    <CustomerStatus />
                 </div>
             </div>
             <div className={style.shows}>
@@ -27,16 +26,15 @@ export default function Customer() {
             </div>
      
     </div>
+  )}
    
-=======
-import CustomerSkills from "@/components/Customer/customer"
-export default function E() {
-  return (
-    <>
-    <div>
-    <CustomerSkills/>
-    </div>
-   </>
->>>>>>> 36fa7b34995398a044d6b4029c3daa0d9d23351e
-  )
-}
+// import CustomerSkills from "@/components/Customer/customer"
+// export default function E() {
+//   return (
+//     <>
+//     <div>
+//     <CustomerSkills/>
+//     </div>
+//    </>
+//   )
+// }

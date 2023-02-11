@@ -2,9 +2,9 @@
 import UserNav from "../userNav/usernav";
 import Footer from '../footer/footer';
 import style from '../create-complaint/postcomplaint.module.css'
-import CreateComplaint from '../create-emp-customer-complaint/complaint';
+import Postcomplaint from "../post-complaint/post-complaint";
 import SideBar from "../sidenav/sidenav";
-export default function PostComplaint() {
+export default function PostComplaintPage() {
     return (
         <>
             <div className={style.container} >
@@ -17,7 +17,7 @@ export default function PostComplaint() {
                     </div>
                     <div className={style.setting}>
                         <div className={style.settings}>
-                            <CreateComplaint />
+                           <Postcomplaint/>
                         </div>
                     </div>
                 </div>

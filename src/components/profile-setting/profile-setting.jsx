@@ -1,4 +1,4 @@
-import style from '@/components/profile-setting/profile-settings.module.css'
+import style from '../profile-setting/profile-settings.module.css'
 import FormButton from "../button/button"
 import Custominput from '../custominput/custominput'
 

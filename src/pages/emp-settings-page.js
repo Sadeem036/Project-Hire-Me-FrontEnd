@@ -1,5 +1,5 @@
 import React from 'react'
-import Settings from '../components/emp-settings/settings'
+import UpdateLayout from '../components/profile-layout/profile-settings'
 
 
 
@@ -8,7 +8,8 @@ const settingsPage = () => {
    
     return (
     <div>
-    <Settings/>
+
+    <UpdateLayout/>
     </div>
   )
 }

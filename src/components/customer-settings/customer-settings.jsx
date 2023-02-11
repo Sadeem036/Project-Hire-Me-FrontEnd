@@ -1,6 +1,8 @@
 import React, { useState,useEffect } from 'react'
 import axios from 'axios'
 import Cookies from 'js-cookie'
+import CustomInput from '../custominput/custominput'
+import CustomButton from '../custombutton/custombutton'
 
 const CustomerSettings = () => {
     
@@ -38,13 +40,13 @@ const CustomerSettings = () => {
         
   return (
     <div>
-    {console.log(settings)}
-    <input value={settings.customer_phone} onChange={(e)=>setSettings({...settings, customer_phone:e.target.value})}/>
-    <input value={settings.customer_name} onChange={(e)=>setSettings({...settings, customer_name:e.target.value})}/>
-    <input value={settings.customer_password} onChange={(e)=>setSettings({...settings, customer_password:e.target.value})}/>
-    <input value={settings.customer_language} onChange={(e)=>setSettings({...settings, customer_language:e.target.value})}/>
-    <input value={settings.customer_city} onChange={(e)=>setSettings({...settings, customer_city:e.target.value})} />
-    <button onClick={onClickHandler}>Update Settings</button>
+    <h2>Customer Settings</h2>
+    <CustomInput value={settings.customer_phone} onChange={(e)=>setSettings({...settings, customer_phone:e.target.value})}/>
+    <CustomInput value={settings.customer_name} onChange={(e)=>setSettings({...settings, customer_name:e.target.value})}/>
+    <CustomInput value={settings.customer_password} onChange={(e)=>setSettings({...settings, customer_password:e.target.value})}/>
+    <CustomInput value={settings.customer_language} onChange={(e)=>setSettings({...settings, customer_language:e.target.value})}/>
+    <CustomInput value={settings.customer_city} onChange={(e)=>setSettings({...settings, customer_city:e.target.value})} />
+    <CustomButton onClick={onClickHandler} name="Update Settings"/>
     
        </div>
   )

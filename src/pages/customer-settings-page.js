@@ -1,10 +1,11 @@
 import React from 'react'
-import CustomerSettings from '../components/customer-settings/customer-settings'
+import CustomerProfileLayout from '../components/customer-profile-layout/customer-profile-layout'
+
 
 const CustomerSettingsPage = () => {
   return (
     <div>
-    <CustomerSettings/>
+    <CustomerProfileLayout/>
       
     </div>
   )

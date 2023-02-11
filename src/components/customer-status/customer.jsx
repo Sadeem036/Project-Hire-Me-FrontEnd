@@ -1,5 +1,5 @@
 import React from 'react'
-import style from '@/components/customer-status/customer.module.css'
+import style from '../customer-status/customer.module.css'
 export default function CustomerStatus() {
     return (
         <div className={style.container}>

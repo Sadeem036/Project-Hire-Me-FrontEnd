@@ -5,6 +5,7 @@ import axios from 'axios'
 import Cookies from 'js-cookie'
 import { useRouter } from 'next/router'
 import style from '../login-emp/login.module.css'
+import Link from 'next/link'
 
 const Login = () => {
     const [inputs, setInputs] = useState({}) ;
@@ -33,6 +34,7 @@ const Login = () => {
         const {emp_city} = userData
         Cookies.set("emp_id",emp_id)
         Cookies.set("emp_city",emp_city)
+        alert("Login Successfully")
         router.push("/employee")
       }
     })
@@ -64,6 +66,9 @@ const Login = () => {
         </div>
         <div className={style.button3}>
     <FormButton  name="Login" type="submit" />
+    </div>
+    <div className={style.decoration}>
+    <p>Don't have an Account ? <Link  href="/signup-emp">Signup</Link></p>
     </div>
     </form>
     </div>

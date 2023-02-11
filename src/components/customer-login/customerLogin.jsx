@@ -4,6 +4,7 @@ import FormButton from '../button/button';
 import axios from 'axios';
 import Cookies from 'js-cookie';
 import Router, { useRouter } from 'next/router';
+import Link from 'next/link';
 import style from '../customer-login/login-customer.module.css'
 
 const CustomerLogin = () => {
@@ -34,6 +35,7 @@ const CustomerLogin = () => {
               const {customer_city} = userData
               Cookies.set("customer_id",customer_id)
               Cookies.set("customer_city",customer_city)
+              alert("Login Successfully")
               router.push("/customer")
             }
           })
@@ -67,6 +69,9 @@ const CustomerLogin = () => {
         <div className={style.button3}>
       <FormButton name="Login" type="submit" />
       </div>
+      <div className={style.decoration}>
+    <p>Don't have an Account ? <Link  href="/signup-customer">Signup</Link></p>
+    </div>
       </form>
       </div>
       </div>

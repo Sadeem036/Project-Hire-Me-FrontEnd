@@ -1,7 +1,7 @@
 import SideBar from '../sidenav/sidenav';
 import UserNav from "../userNav/usernav";
 import Footer from '../footer/footer';
-import style from '@/components/complaint-emp-customer/complaint.module.css'
+import style from '../complaint-emp-customer/complaint.module.css'
 import GetComplaint from '../complain/get-complain';
 export default function UserComplaint() {
     return (

@@ -1,7 +1,7 @@
 import React from 'react'
 import style from '../Stauts/status.module.css'
 
-export default function Userstatus() {
+export default function UserStatus() {
     return (
         <div className={style.container}>
             <div className={style.status} >
@@ -13,7 +13,7 @@ export default function Userstatus() {
                 <button className={style.button3}>Completed</button>
             </div>
             <div className={style.services}>
-                <button className={style.service}>+ Add Service</button>
+                <button className={style.service}>+ Add Skills</button>
             </div>
         </div>
     )

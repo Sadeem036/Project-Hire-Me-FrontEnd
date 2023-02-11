@@ -1,12 +1,12 @@
 import React from 'react'
-import Postcomplaint from '../components/post-complaint/post-complaint'
+import PostComplaintPage from '../components/create-complaint/postcomplaint'
 
-const PostComplaintPage = () => {
+const PostComplaintPageUser = () => {
   return (
     <div>
-      <Postcomplaint/>
+     <PostComplaintPage/>
     </div>
   )
 }
 
-export default PostComplaintPage
+export default PostComplaintPageUser

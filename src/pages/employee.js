@@ -1,6 +1,6 @@
 import SideBar from "../components/sidenav/sidenav";
 import UserNav from "../components/userNav/usernav";
-import Userstatus from "../components/Stauts/Status";
+import UserStatus from "../components/Stauts/Status";
 import Footer from "../components/footer/footer";
 import style from '../styles/emp.module.css'
 
@@ -18,7 +18,7 @@ export default function Employee() {
                 </div>
 
                 <div>
-                    <Userstatus />
+                    <UserStatus />
                 </div>
             </div>
             <div className={style.shows}>
