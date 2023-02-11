@@ -1,4 +1,4 @@
-import style from '@/components/navbar/navbar.module.css'
+import style from '../navbar/navbar.module.css'
 import logoImage from '../../../public/logo.jpg'
 import Image from 'next/image'
 import Router, { useRouter } from 'next/router'
@@ -13,9 +13,6 @@ export default function Navbar() {
                         src={logoImage}
                         alt="Picture of the author"
                     />
-                </div>
-                <div>
-                <p >Hire Me</p>
                 </div>
             </div>
             <div className={style.nav}>

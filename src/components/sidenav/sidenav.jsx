@@ -1,19 +1,24 @@
 import React from 'react'
-import style from '@/components/sidenav/sidenav.module.css'
+import Link from 'next/link'
+import style from '../sidenav/sidenav.module.css'
 
-export default function SideBar() {
-    return (
-        <div >
+
+export default function SideBar(props) {
+
+    
+    
+        return (
+        
             <div className={style.container}>
                 <ul>
-                    <h1>Name</h1>
+                    <h1 className={style.header}>Profile </h1>
                     <li><a href="">Notifications</a></li>
                     <li><a href="">Reviews</a></li>
-                    <li><a href="">Complaint</a></li>
-                    <li><a href="">Profile Settings</a></li>
-                    <li><a href="">Log out</a></li>
+                    <li><Link href={props.complaintPage}>Complaint</Link></li>
+                    <li><Link href={props.href}>Profile Settings </Link></li>
+                    
                 </ul>
             </div>
-        </div>
+       
     )
 }

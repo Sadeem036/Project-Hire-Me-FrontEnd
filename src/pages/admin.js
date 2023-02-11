@@ -1,10 +1,12 @@
-import LoginAdmin from '@/components/login-admin/loginAdmin'
+
 import React from 'react'
+import LoginAdmin from '../components/login-admin/loginAdmin'
+
 
 const Admin = () => {
   return (
     <div>
-    <LoginAdmin/> 
+    <LoginAdmin/>
     </div>
   )
 }

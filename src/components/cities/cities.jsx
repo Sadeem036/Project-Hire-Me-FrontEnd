@@ -1,9 +1,10 @@
 import React from 'react'
+import style from '../cities/cities.module.css'
 
 const Cities = (props) => {
   return (
     <div>
-    <select name={props.name} onChange={props.onChange} required value={props.value}>
+    <select className={style.selector} name={props.name} onChange={props.onChange} required value={props.value}>
     <option value="" disabled selected>Select The City</option>
     <option value="Islamabad">Islamabad</option>
     <option value="" disabled>Punjab Cities</option>

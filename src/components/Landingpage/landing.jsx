@@ -1,9 +1,9 @@
-import Footer from "@/components/footer/footer";
-import Homepage from "@/components/home/home";
-import Navbar from "@/components/navbar/navbar";
-import style from '@/components/Lanidingpage/landing.module.css'
-import Employee from "../Employee/emp";
-
+import React from "react";
+import Footer from '../footer/footer'
+import Homepage from "../home/home";
+import Navbar from "../navbar/navbar";
+import style from '../Landingpage/landing.module.css'
+import Paraghraph from "../paragraph/paraghraph";
 export default function Landingpage() {
     return (
         <div className={style.container} >
@@ -14,7 +14,10 @@ export default function Landingpage() {
                 <Homepage />
             </div>
             <div>
-                <Footer />
+                <Paraghraph/>
+            </div>
+            <div className={style.shows}>
+                <Footer/>
             </div>
         </div>
     )

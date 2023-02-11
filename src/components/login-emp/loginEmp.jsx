@@ -4,7 +4,7 @@ import InputField from '../input-field/input-field'
 import axios from 'axios'
 import Cookies from 'js-cookie'
 import { useRouter } from 'next/router'
-import Employee from '@/pages/employee'
+import style from '../login-emp/login.module.css'
 
 const Login = () => {
     const [inputs, setInputs] = useState({}) ;
@@ -27,35 +27,48 @@ const Login = () => {
         console.log("User not found");
         alert("error")
       }else {
-        Cookies.set("Token",res.data.accessToken)
+        Cookies.set("empToken",res.data.accessToken)
         const [userData] = res.data.user 
         const {emp_id} = userData
-        Cookies.set("User",emp_id)
+        const {emp_city} = userData
+        Cookies.set("emp_id",emp_id)
+        Cookies.set("emp_city",emp_city)
         router.push("/employee")
       }
     })
     .catch((error) => console.log(error));
   };
-  
-    return (
-      <form onSubmit={handleSubmit}>
-    <InputField onChange={handleChangeLogin}
+
+  return (
+    <div className={style.container}>
+      <div className={style.form}>
+    <form onSubmit={handleSubmit}>
+      <div className={style.formhead}>
+      <h1 >Employee Login</h1>
+      </div>
+    <div className={style.input}>
+    <InputField className={style.input} onChange={handleChangeLogin}
         label="Phone Number"
         name="emp_phone"
-        type="Number"
+        type="text"
         value={inputs.emp_phone}
         />
-
+        </div>
+        <div className={style.input}>
     <InputField onChange={handleChangeLogin}
         label="Password"
         name="emp_password"
         type="password"
         value={inputs.emp_password}
         />
-    <FormButton name="Login" type="submit" />
+        </div>
+        <div className={style.button3}>
+    <FormButton  name="Login" type="submit" />
+    </div>
     </form>
-    )
-  }
-
+    </div>
+    </div>
+  )
+}
 
 export default Login

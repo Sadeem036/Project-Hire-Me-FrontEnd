@@ -1,10 +1,10 @@
-import GetComplaint from '@/components/complain/get-complain'
 import React from 'react'
+import GetComplaint from '../components/complain/get-complain'
 
 const Complaint = () => {
   return (
     <div>
-<GetComplaint/>
+    <GetComplaint/>
     </div>
   )
 }
