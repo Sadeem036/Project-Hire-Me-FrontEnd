@@ -5,10 +5,11 @@ import style from '../styles/emp.module.css'
 import CustomerStatus from "../components/customer-status/customer";
 
 export default function Customer() {
+ 
   return (
     
     <div className={style.container}>
-    <div>
+    <div onClick={onClick}>
                 <UserNav />
             </div>
             <div className={style.show}>
