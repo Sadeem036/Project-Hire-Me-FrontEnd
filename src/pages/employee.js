@@ -5,10 +5,11 @@ import Footer from "../components/footer/footer";
 import style from '../styles/emp.module.css'
 
 export default function Employee() {
+   
   return (
     
     <div className={style.container}>
-    <div>
+            <div>
                 <UserNav />
             </div>
             <div className={style.show}>

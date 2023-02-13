@@ -3,11 +3,13 @@ import logoImage from '../../../public/logo.jpg'
 import Image from 'next/image'
 import Link from 'next/link'
 import LogoutButton from '../logout-button/logout-button'
+import Router, { useRouter } from 'next/router'
 
-export default function UserNav() {
+export default function UserNav(props) {
+    const router = useRouter()
     return (
         <div className={style.container}>
-                <div>
+                <div onClick={props.onClick}>
                 <Image className={style.logo}
                     src={logoImage}
                     alt="Picture of the author"
