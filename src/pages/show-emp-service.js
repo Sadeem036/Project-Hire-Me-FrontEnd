@@ -1,10 +1,10 @@
 import React from 'react'
-import GetEmpService from '../components/get-emp-service/get-emp-service'
+import GetEmpServiceLayout from '../components/get-employee-services/get-emp-service'
 
 const ShowEmpServicePage = () => {
   return (
     <div>
-    <GetEmpService/>
+    <GetEmpServiceLayout/>
       
     </div>
   )

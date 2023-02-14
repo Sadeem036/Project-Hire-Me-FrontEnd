@@ -1,16 +1,16 @@
 import CustomerSideBar from "../components/customer-side-bar/customer-side-bar";
-import UserNav from "../components/userNav/usernav";
 import Footer from "../components/footer/footer";
 import style from '../styles/emp.module.css'
 import CustomerStatus from "../components/customer-status/customer";
+import CustomerNav from "../components/customer-navbar/customer-navbar";
 
 export default function Customer() {
  
   return (
     
     <div className={style.container}>
-    <div>
-                <UserNav />
+    <div >
+                <CustomerNav />
             </div>
             <div className={style.show}>
 

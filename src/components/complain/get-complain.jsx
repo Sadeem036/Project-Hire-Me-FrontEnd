@@ -64,13 +64,20 @@ const GetComplaint = () => {
 
     {complaint.map((data)=>{
         return(
-        <>
+        <div className={style.complaintcontainer}>
+        <div className={style.complain}>
+        <h4>ID</h4>
+        <p>{data.customer_id} </p>
+        <p>{data.emp_id} </p>
         <h4>Name:</h4>
-        <p>{data.customer_id}   {data.customer_name}</p>
-        <p>{data.emp_id}   {data.emp_name}</p>
+        <p> {data.customer_name}</p>
+        <p>  {data.emp_name}</p>
+        </div>
         <h4>Description</h4><p>{data.complaint_description}</p>
-        </>
-        )
+        <div/>
+        <br/>
+        
+        </div>)
     })}
  
     </div>

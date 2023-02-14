@@ -45,12 +45,13 @@
     display: flex;
 }
 .service {
-    background-color: rgb(99, 00, 99);
+    background-color: #9c27b0;
     margin: 30px;
     width:250px;
     height: 70px;
     border-radius: 10px;
     font-size: 30px;
     color: white;
-    margin-left:10px
+    margin-left:10px;
+    border: 1px solid #9c27b0 ;
 }

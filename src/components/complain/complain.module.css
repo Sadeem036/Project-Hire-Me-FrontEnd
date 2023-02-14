@@ -21,3 +21,13 @@
     width:600px
 
 }
+
+.complain{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.complaintcontainer{
+/* border: 2px solid black; */
+text-align: justify;
+}

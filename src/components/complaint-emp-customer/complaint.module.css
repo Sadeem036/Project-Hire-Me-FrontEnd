@@ -1,5 +1,4 @@
 .container{
-    /* background-color: aqua; */
     min-height:100vh;
     width:100%;
 }
@@ -12,12 +11,10 @@
     /* margin-top: -23px; */
     margin-left: -20px;
 }
-.complain{
-
-    min-height: 400px;
-    height: auto;
-    width: 80%;
-    margin-top: 100px;
+.dev{
+    width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
 }
