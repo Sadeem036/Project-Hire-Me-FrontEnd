@@ -2,12 +2,12 @@
     height: auto;
     margin-bottom: 40px;
     display: flex;
-    width: 95%;
+    width: 90%;
     margin-left: 100px;
     
 }
 .decoration{
-    color: rgb(99, 00, 99);
+    color: #9c27b0;
     font-size: 20px;
     text-decoration: none;
 }
@@ -27,5 +27,5 @@
 .h2{
     font-size: 20px;
     font-weight: bold;
-    color: rgb(99, 00, 99);
+    color: #9c27b0;
 }
