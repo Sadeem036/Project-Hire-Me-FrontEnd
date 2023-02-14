@@ -19,7 +19,7 @@ export default function SideBar() {
                 <li><Link href="/notification">Notifications</Link></li>
                 <li><Link href="">Reviews</Link></li>
                 <li><Link href="/post-complaint">Complaint</Link></li>
-                <li><Link href="/emp-settings-page">Profile Settings</Link></li>
+                <li><Link href="/customer-settings-page">Profile Settings</Link></li>
             </ul>
         </div>
     )
