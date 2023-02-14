@@ -10,7 +10,7 @@ export default function UserNav(props) {
     return (
         <div className={style.container}>
                 <div onClick={props.onClick}>
-                <Image className={style.logo}
+                <Image onClick={()=> router.push("/employee")} className={style.logo}
                     src={logoImage}
                     alt="Picture of the author"
                 />

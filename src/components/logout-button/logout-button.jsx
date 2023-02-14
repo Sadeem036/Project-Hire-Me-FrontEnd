@@ -10,9 +10,6 @@ const LogoutButton = () => {
         Cookies.remove("empToken")
         Cookies.remove("emp_id")
         Cookies.remove("emp_city")
-        Cookies.remove("customerToken")
-        Cookies.remove("customer_id")
-        Cookies.remove("customer_city")
         router.push("/")
     }
 
