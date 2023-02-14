@@ -1,0 +1,35 @@
+.container{
+    width:100%;
+}
+
+.show{
+    display: flex;
+    margin-top: -10PX;
+}
+.shows{
+    margin-top: -23px;
+    margin-left: -20px;
+}
+.settings{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 60%;
+   min-height: 500px;
+   height: auto;
+    font-size: 20px;
+    overflow: scroll;
+    border-radius: 10px;
+
+
+}
+ .setting{
+    background-color: whitesmoke;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    margin-left: 30px;
+} 

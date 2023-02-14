@@ -8,19 +8,18 @@ export default function UserStatus() {
         <div className={style.container}>
             <div className={style.status} >
 
-                <button className={style.button1}  >Active</button>
+                <button type ="submit" className={style.button1}  >Active</button>
 
-                <button className={style.button2}>Pending</button>
+                <button type ="submit" className={style.button2}>Pending</button>
 
-                <button className={style.button3}>Completed</button>
+                <button type ="submit" className={style.button3}>Completed</button>
             </div>
             <div className={style.services}>
-                <button onClick={()=> router.push("/service-category")} className={style.service}>
+                <button onClick={()=> router.push("/service-category")} type ="submit" className={style.service}>
                 + Add Skills</button>
+                <button onClick={()=> router.push("/show-emp-service")} type ="submit" className={style.service}>Your Skills</button>
             </div>
-            <div>
-                <button onClick={()=> router.push("/show-emp-service")} >Your Skills</button>
-            </div>
+           
         </div>
     )
 }

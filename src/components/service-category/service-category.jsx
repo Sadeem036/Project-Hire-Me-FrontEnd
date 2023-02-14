@@ -1,6 +1,7 @@
 import React, { useEffect, useState,useMemo } from "react";
 import axios from "axios";
 import Cookies from "js-cookie";
+import style from '../service-category/service-category.module.css'
 import Router, { useRouter } from "next/router";
 
 const ServiceCategory = () => {
@@ -84,13 +85,13 @@ const ServiceCategory = () => {
 
 
   return (
-    <div>
-      <select value={id} onClick={onClickHandler } onChange={changehandler}>
+    <div >
+      <select className={style.container} value={id} onClick={onClickHandler } onChange={changehandler}>
         {category.map((data) => {
           return (
             <>
-              <option>
-                <p>{data.service_category_id} </p>
+              <option  >
+                <p >{data.service_category_id} </p>
                 <p>{data.service_category_name}</p>
               </option>
             </>
@@ -101,12 +102,12 @@ const ServiceCategory = () => {
       
         {subCategory.map((data) => {
           return (
-            <div>
-            <label> 
-            <input type="radio" value={data.sub_category_id} onClick={onChangehandler}/>
+            <div className={style.label}>
+            <label > 
+            <input className={style.container1} type="radio" value={data.sub_category_id} onClick={onChangehandler}/>
             {data.sub_category_name}
             </label>
-            <button onClick={addSkills}>ADD Skill</button>
+            <button className={style.container2} onClick={addSkills}>ADD Skill</button>
             </div> 
             )
         })}
