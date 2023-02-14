@@ -1,4 +1,4 @@
-import Usernotification from '@/components/UserNotification/notification'
+import Usernotification from '../components/UserNotification/notification'
 import React from 'react'
 
 const Notification = () => {

@@ -1,7 +1,7 @@
 import SideBar from '../sidenav/sidenav';
 import UserNav from "../userNav/usernav";
 import Footer from '../footer/footer';
-import style from '@/components/UserNotification/notification.module.css'
+import style from '../UserNotification/notification.module.css'
 import GetNotification from '../notification/notification';
 export default function Usernotification() {
     return (

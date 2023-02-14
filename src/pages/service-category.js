@@ -1,11 +1,11 @@
 import React from 'react'
-import ServiceCategory from '../components/service-category/service-category'
+import GetServices from '../components/service-category-layout/service-category'
 
 
 const ServiceCategoryPage = () => {
   return (
     <div>
-    <ServiceCategory/>
+    <GetServices/>
     </div>
     
   )
