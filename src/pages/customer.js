@@ -9,7 +9,7 @@ export default function Customer() {
   return (
     
     <div className={style.container}>
-    <div onClick={onClick}>
+    <div>
                 <UserNav />
             </div>
             <div className={style.show}>

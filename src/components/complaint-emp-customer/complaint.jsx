@@ -16,7 +16,7 @@ export default function UserComplaint() {
                     <SideBar />
                 </div>
  
-                <div>
+                <div className={style.complain}>
                     <GetComplaint/>
                 </div>
             </div>

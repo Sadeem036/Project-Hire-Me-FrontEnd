@@ -9,6 +9,15 @@
     margin-top: -10PX;
 }
 .shows{
-    margin-top: -23px;
+    /* margin-top: -23px; */
     margin-left: -20px;
+}
+.complain{
+
+    min-height: 400px;
+    height: auto;
+    width: 80%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
 }
