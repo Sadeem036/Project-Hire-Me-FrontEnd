@@ -1,8 +1,8 @@
 import SideBar from '../sidenav/sidenav';
 import UserNav from "../userNav/usernav";
 import Footer from '../footer/footer';
-import style from '@/components/UserNotification/notification.module.css'
-import GetFeedback from '../Feedback-emp-customer/feedback';
+import style from '../feedback/feedback.module.css'
+import EmpReviews from '../emp-reviews/emp-reviews';
 export default function Userfeedback() {
     return (
         <>
@@ -17,7 +17,7 @@ export default function Userfeedback() {
                 </div>
  
                 <div>
-                    <GetFeedback/>
+                    <EmpReviews/>
                 </div>
             </div>
             <div className={style.shows}>

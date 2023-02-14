@@ -9,7 +9,7 @@ export default function Paraghraph() {
         <div className={style.container}>
             <div className={style.paraghraph}>
                 <h1 className={style.h1}>Why Choose Hire Me Services?</h1>
-                <p >Hire Me is Pakistan most trustworthy top service provider. It's an online platform that connects customers and fixers for their needs and <Link className={style.decoration} href="">Services</Link>. The Uncle Fixer crew will always be there for you in the event of a problem.The following are the most important aspects of our success:
+                <p >Hire Me is Pakistan most trustworthy top service provider. It's an online platform that connects customers and fixers for their needs and   <Link className={style.decoration} href="">Services</Link>. The Uncle Fixer crew will always be there for you in the event of a problem.The following are the most important aspects of our success:
                 </p>
                 <p className={style.h2}>Waranty</p>
                 <p>
