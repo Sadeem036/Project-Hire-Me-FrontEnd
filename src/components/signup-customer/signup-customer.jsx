@@ -23,7 +23,7 @@ const SignupCustomer = () => {
     const {customer_password} = inputs
     console.log(customer_password);
     const phoneRegex = /^(\+92|0092|92)(-)?[0-9]{3}(-)?[0-9]{7}$/
-    if(phoneRegex.test(customer_phone) && customer_password >= 6){
+    if(phoneRegex.test(customer_phone)){
     axios({
       method: "post",
       headers: { "Content-Type": "Application/json" },

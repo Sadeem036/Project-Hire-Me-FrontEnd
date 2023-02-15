@@ -8,11 +8,11 @@ export default function UserStatus() {
         <div className={style.container}>
             <div className={style.status} >
 
-                <button type ="submit" className={style.button1}  >Active</button>
+                <button type ="submit" onClick={()=> router.push("/service-status") } className={style.button1}  >Active</button>
 
                 <button type ="submit" className={style.button2}>Pending</button>
 
-                <button type ="submit" className={style.button3}>Completed</button>
+                <button type ="submit" onClick={()=> router.push("/complete-service")} className={style.button3}>Completed</button>
             </div>
             <div className={style.services}>
                 <button onClick={()=> router.push("/service-category")} type ="submit" className={style.service}>

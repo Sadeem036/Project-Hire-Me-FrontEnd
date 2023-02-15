@@ -17,7 +17,7 @@ export default function SideBar() {
                     <h1 className={style.header}> Profile</h1>
                 </div>
                 <li><Link href="/notification">Notifications</Link></li>
-                <li><Link href="">Reviews</Link></li>
+                <li><Link href="/emp-reviews">Reviews</Link></li>
                 <li><Link href="/post-complaint">Complaint</Link></li>
                 <li><Link href="/emp-settings-page">Profile Settings</Link></li>
             </ul>
