@@ -2,7 +2,6 @@
 import UserNav from "../userNav/usernav";
 import Footer from '../footer/footer';
 import style from '../create-complaint/postcomplaint.module.css'
-import Postcomplaint from "../post-complaint/post-complaint";
 import AdminSideBar from "../admin-sidebar/admin-sidebar";
 export default function AdminSideBarLayout() {
     return (
