@@ -1,10 +1,10 @@
 import React from 'react'
-import GetRequestEmployee from '../components/get-request-employee/get-request-employee'
+import GetRequestLayout from '../components/get-request-emp-layout/get-request-emp'
 
 const RequestsPage = () => {
   return (
     <div>
-    <GetRequestEmployee/>
+    <GetRequestLayout/>
     </div>
   )
 }

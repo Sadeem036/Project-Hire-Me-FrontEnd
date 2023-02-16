@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import Cookies from 'js-cookie'
 import CustomButton from '../custombutton/custombutton'
+import style from '../get-request-for-employee/request.module.css'
 
 const GetRequestForEmployee = () => {
   const userToken = Cookies.get("empToken")
@@ -63,18 +64,18 @@ const GetRequestForEmployee = () => {
 
   return (
     <>
-    <div>
+    <div >
       {  
         requests.map((data)=>{
           if(data.customer_city == empCity){
             return(
-              <div key={data.request_id}>
+              <div key={data.request_id} className={style.container}>
               {console.log("customer",data.customer_name)}
               
-              <p>{data.customer_name}</p>
+              <p>Customer: {data.customer_name}</p>
              
-              <p>{data.service_category_name}</p>
-              <p>{data.sub_category_name}</p>
+              <p>Service Category: {data.service_category_name}</p>
+              <p>Sub Category: {data.sub_category_name}</p>
               <CustomButton name="Accept" onClick={()=> setValues(data)}/>
               </div>
             )

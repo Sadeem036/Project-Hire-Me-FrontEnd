@@ -1,10 +1,9 @@
 import React from 'react'
-import ServiceByStatus from '../components/service-by-status/service-by-status'
-
+import EmpServiceStatusLayout from '../components/emp-sevice-by-status/emp-service-status'
 const ServiceStatus = () => {
   return (
     <div>
-    <ServiceByStatus/>
+    <EmpServiceStatusLayout/>
       
     </div>
   )

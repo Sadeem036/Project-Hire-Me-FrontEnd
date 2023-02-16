@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import Cookies from 'js-cookie'
+import style from '../complete-service/complete.module.css'
 
 const CompleteService = () => {
    
@@ -28,7 +29,7 @@ const CompleteService = () => {
     {
         completedTasks.map((data)=>{
             return(
-                <div>
+                <div className={style.container}>
                 <p>Customer: {data.customer_name}</p>
                 <p>Category: {data.service_category_name}</p>
                 <p>Sub Category: {data.sub_category_name}</p>

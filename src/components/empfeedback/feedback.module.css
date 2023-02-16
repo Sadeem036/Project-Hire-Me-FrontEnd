@@ -12,3 +12,11 @@
     margin-top: -23px;
     margin-left: -20px;
 }
+
+.reviews{
+    overflow:scroll;
+    height:660px;
+    margin-top:80px;
+    width:100%;
+    text-align:center;
+}

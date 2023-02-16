@@ -1,10 +1,10 @@
 import React from 'react'
-import EmpReviews from '../components/emp-reviews/emp-reviews'
+import EmpFeedbackLayout from '../components/empfeedback/feedback'
 
 const EmpReviewsPage = () => {
   return (
     <div>
-    <EmpReviews/>
+    <EmpFeedbackLayout/>
       
     </div>
   )

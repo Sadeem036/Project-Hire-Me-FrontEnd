@@ -1,10 +1,9 @@
 import React from 'react'
-import CustomerReviews from '../components/customer-review/customer-review'
-
+import CustomerFeedbackLayout from '../components/customer-feedback/customer-feedback'
 const CustomerReviewsPage = () => {
   return (
     <div>
-    <CustomerReviews/>
+    <CustomerFeedbackLayout/>
       
     </div>
   )
