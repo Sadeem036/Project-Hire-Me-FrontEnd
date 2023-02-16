@@ -11,7 +11,7 @@
     font-weight: bold;
     margin-left: -7px;
   }
-  .container .logo{
+  .container .logo1{
     width: 90px;
     height: 80px;
     margin-left: 50px;
@@ -44,7 +44,7 @@
   }
   
   .li a:hover:not(.active) {
-    background-color: rgb(99,00, 99);
+    background-color: #9c27b0;
   }
 
  .container .nav {
@@ -61,7 +61,7 @@
     color: #111;
 }
 .container .nav .ul .li a:hover:not(.active) {
-  background-color: rgb(99,00, 99);
+  background-color: #9c27b0;
   color: white;
 }
 .text{

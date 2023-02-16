@@ -1,0 +1,27 @@
+.container{
+    width:100%;
+}
+
+.show{
+    display: flex;
+    margin-top: -10PX;
+
+}
+.shows{
+    margin-top: -23px;
+    margin-left: -20px;
+    text-align:left;
+}
+.text{
+    margin-left: 30px;
+} 
+
+.status{
+    overflow: scroll;
+    height: 650px;
+    width:100%;
+    margin-top: 88px;
+    align-items: center;
+    text-align:center;
+    font-size:20px;
+}

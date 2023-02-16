@@ -1,11 +1,10 @@
 import React from 'react'
-import CustomerRequest from '../components/customer-request/customer-request'
-
+import CustomerRequestLayout from '../components/customer-request-layout/customer-request'
 
 const CustomerRequestPage = () => {
   return (
     <div>
-    <CustomerRequest/>
+    <CustomerRequestLayout/>
     </div>
   )
 }

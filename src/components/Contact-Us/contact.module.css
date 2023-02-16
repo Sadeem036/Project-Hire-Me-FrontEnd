@@ -2,14 +2,12 @@
     margin-top: 120px;
     width: 100%;
     display: block;
-    /* display: flex; */
 
 }
 
 .logo {
     margin-left: 30px;
     border-radius: 20px;
-    /* display: flex; */
 }
 
 .contact {
@@ -24,11 +22,13 @@
     color: #9c27b0;
     text-decoration: none;
 }
-.logo1{
+
+.logo1 {
     height: 50px;
     width: 50px;
 }
-.dev{
+
+.dev {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,6 +41,8 @@
     text-align: left;
     padding-left: 80px;
     margin-top: 30px;
+    text-align: justify;
+    margin-left: 50px;
 }
 
 .shows {

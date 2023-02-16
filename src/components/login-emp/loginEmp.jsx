@@ -27,9 +27,12 @@ const Login = () => {
       if(userData == undefined || userData == null){
         console.log("User not found");
         alert("error")
+        console.log('res.data',res)
+        console.log("data null")
       }else {
         Cookies.set("empToken",res.data.accessToken)
         const [userData] = res.data.user 
+        console.log('res.data',res.data)
         const {emp_id} = userData
         const {emp_city} = userData
         Cookies.set("emp_id",emp_id)
@@ -38,7 +41,7 @@ const Login = () => {
         router.push("/employee")
       }
     })
-    .catch((error) => console.log(error));
+    .catch((error) => console.log("data"));
   };
 
   return (

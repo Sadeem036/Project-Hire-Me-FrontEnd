@@ -1,10 +1,10 @@
 import React from 'react'
-import CompleteService from '../components/complete-service/complete-service'
+import CompleteServiceLayout from '../components/complete-service-layout/complete-services'
 
 const CompleteServicePage = () => {
   return (
     <div>
-    <CompleteService/>
+    <CompleteServiceLayout/>
       
     </div>
   )

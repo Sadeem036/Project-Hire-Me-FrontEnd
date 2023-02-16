@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import Cookies from 'js-cookie'
 import CustomButton from '../custombutton/custombutton'
+import style from '../service-by-status/service-by-status.module.css'
 
 const ServiceByStatus = () => {
     const [tasks,setTasks] = useState([])
@@ -37,6 +38,7 @@ const ServiceByStatus = () => {
     .catch(error => console.log(error))
 
     const feedback = prompt("Please give your Feedback")
+    console.log("dataa",data)
     const customerId = data.customer_id
     axios({
         method:"post",
@@ -59,12 +61,12 @@ const ServiceByStatus = () => {
     {
         tasks.map((data)=>{
          return(
-            <>
+            <div className={style.container}>
                 <p>Customer: {data.customer_name }</p>
                 <p>Category: {data.service_category_name}</p>
                 <p>Sub Category: {data.sub_category_name}</p>
                 <CustomButton name="Complete" onClick={()=> onClickHandle(data) }/>
-            </>
+            </div>
          )
         })
     }

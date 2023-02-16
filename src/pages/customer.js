@@ -3,8 +3,26 @@ import Footer from "../components/footer/footer";
 import style from '../styles/emp.module.css'
 import CustomerStatus from "../components/customer-status/customer";
 import CustomerNav from "../components/customer-navbar/customer-navbar";
+import Cookies from "js-cookie";
+import { useRouter } from "next/router";
+import { useEffect } from "react";
 
 export default function Customer() {
+    const router = useRouter()
+  const isAuthenticated = Cookies.get('customerToken')
+  useEffect(()=>{
+
+      if(isAuthenticated == null){
+            router.push('/customer-login')
+      }else{
+        console.log('isValid')
+      }
+  },[])
+
+
+  // else {
+  // }
+  console.log('emplogin',isAuthenticated)
  
   return (
     

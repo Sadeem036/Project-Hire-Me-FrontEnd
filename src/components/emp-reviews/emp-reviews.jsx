@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import Cookies from 'js-cookie'
+import style from '../emp-reviews/reviews.module.css'
 
 const EmpReviews = () => {
     const [reviews,setReviews] = useState([])
@@ -26,7 +27,7 @@ const EmpReviews = () => {
     {
       reviews.map(data => {
         return(
-          <div key={data.employee_feedback_id}>
+          <div key={data.employee_feedback_id} className={style.container}>
             <p>Review: {data.employee_feedback_content}</p>
             <p>Customer: {data.customer_name}</p>
           </div>
