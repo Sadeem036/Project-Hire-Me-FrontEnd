@@ -1,5 +1,5 @@
 import style from '../customer-navbar/customernav.module.css'
-import logoImage from '../../../public/logo.jpg'
+import logoImg from '../../../public/logo12.jpg'
 import Image from 'next/image'
 import Link from 'next/link'
 import CustomerLogout from '../customer-logout/customer-logout'
@@ -10,8 +10,8 @@ export default function CustomerNav(props) {
     return (
         <div className={style.container}>
                 <div onClick={props.onClick}>
-                <Image onClick={()=> router.push("/customer")} className={style.logo}
-                    src={logoImage}
+                <Image onClick={()=> router.push("/customer")} className={style.logo1}
+                    src={logoImg}
                     alt="Picture of the author"
                     
                 />

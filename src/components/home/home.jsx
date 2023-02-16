@@ -8,7 +8,7 @@ export default function Homepage() {
 
         <div className={style.container}>
             <div className={style.text}>
-                <h1>Digital <Link  className={style.hireme} href="/emp-login"> Hire Me Training</Link>Programs</h1>
+                <h1>Digital <Link  className={style.hireme} href="/emp-login"> Hire Me Training </Link> Programs</h1>
             </div>
             <div>
                 <Image className={style.img}

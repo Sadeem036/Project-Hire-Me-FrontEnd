@@ -85,7 +85,7 @@ const SignupCustomer = () => {
             <Cities onChange={handleChange} name="customer_city" value={inputs.customer_city} />
           </div>
           <div className={style.button3}>
-            <FormButton name="Signup" type="submit" />
+            <FormButton name="Signup" type="submit"  />
           </div>
           <p>already have an account?<Link className={style.decoration} href="/customer-login">Login</Link></p>
         </form>

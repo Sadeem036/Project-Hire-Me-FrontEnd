@@ -7,14 +7,15 @@ export default function CustomerStatus() {
         <div className={style.container}>
             <div className={style.status} >
 
-                <button className={style.button1} onClick={()=> router.push("/customer-service-status")} >Active</button>
+                <button onClick={()=> router.push("/customer-service-status")} type ="submit" className={style.button1}  >Active</button>
 
                 <button className={style.button2}>Pending</button>
 
-                <button className={style.button3} onClick={()=> router.push("/customer-completed-service")} >Completed</button>
+                <button onClick={()=> router.push("/customer-completed-service")} type ="submit" className={style.button3}>Completed</button>
             </div>
             <div className={style.services}>
-                <button className={style.service} onClick={()=> router.push("/customer-request-page")}>Select Services</button>
+                <button onClick={()=> router.push("/customer-request-page")} type ="submit" className={style.service}>Select Services</button>
+
             </div>
         </div>
     )

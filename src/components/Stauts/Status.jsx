@@ -1,6 +1,7 @@
 import React from 'react'
 import style from '../Stauts/status.module.css'
 import Router, { useRouter } from 'next/router'
+import CustomButton from '../custombutton/custombutton'
 
 export default function UserStatus() {
     const router = useRouter()
@@ -19,7 +20,7 @@ export default function UserStatus() {
                 + Add Skills</button>
                 <button onClick={()=> router.push("/show-emp-service")} type ="submit" className={style.service}>Your Skills</button>
             </div>
-           
+            <div className={style.request}><CustomButton name="New Requests" onClick={()=> router.push("/requests-page")}/></div>   
         </div>
     )
 }

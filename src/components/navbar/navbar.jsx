@@ -3,7 +3,6 @@ import logoImage from '../../../public/logo.jpg'
 import Image from 'next/image'
 import Router, { useRouter } from 'next/router'
 import Link from 'next/link'
-import { Button } from '@mui/material'
 
 export default function Navbar() {
     const router = useRouter()
@@ -20,7 +19,7 @@ export default function Navbar() {
             <div className={style.nav}>
                 <ul className={style.ul}>
                     <li className={style.li}><Link href="/">Home</Link></li>
-                    <li className={style.li}><Link href="/about">About Us</Link></li>
+                    <li className={style.li}><Link href="/about-us">About Us</Link></li>
                     <li className={style.li}><Link href="/contact">Contact Us</Link></li>
                 </ul>
             </div>

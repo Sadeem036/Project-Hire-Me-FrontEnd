@@ -19,7 +19,7 @@ export default function UserNav(props) {
             <div className={style.nav}>
                 <ul className={style.ul}>
                     <li className={style.li}><Link  href="/">Home</Link></li>
-                    <li className={style.li}><Link href="">About Us</Link></li>
+                    <li className={style.li}><Link href="/about-us">About Us</Link></li>
                     <li className={style.li}><Link href="/contact">Contact Us</Link></li>
                     <li><LogoutButton/></li>
                 </ul>
