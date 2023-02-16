@@ -43,7 +43,6 @@ const Settings = () => {
     <h2>Employee Settings</h2>
     <CustomInput value={settings.emp_phone} onChange={(e)=>setSettings({...settings, emp_phone:e.target.value})}/>
     <CustomInput value={settings.emp_name} onChange={(e)=>setSettings({...settings, emp_name:e.target.value})}/>
-    <CustomInput value={settings.emp_password} onChange={(e)=>setSettings({...settings, emp_password:e.target.value})}/>
     <CustomInput value={settings.emp_language} onChange={(e)=>setSettings({...settings, emp_language:e.target.value})}/>
     <CustomInput value={settings.emp_city} onChange={(e)=>setSettings({...settings, emp_city:e.target.value})} />
     <CustomButton onClick={onClickHandler} name ="Update Settings"/>
