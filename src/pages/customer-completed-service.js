@@ -1,10 +1,15 @@
 import React from 'react'
-import CompleteServiceOfCustomer from '../components/customer-complete-service/customer-complete-service'
+import CustomerCompletedLayout from '../components/customer-complete-service-layout/customer-service'
+
+
+
 
 const CustomerCompletedService = () => {
   return (
     <div>
-    <CompleteServiceOfCustomer/>
+    
+    <CustomerCompletedLayout/>
+    
       
     </div>
   )

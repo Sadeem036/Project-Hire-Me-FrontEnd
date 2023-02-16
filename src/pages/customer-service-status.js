@@ -1,10 +1,10 @@
 import React from 'react'
-import ServiceByStatusForCustomer from '../components/service-status-customer/service-status-customer'
+import CustomerServiceStatusLayout from '../components/customer-status-layout/customer-status'
 
 const CustomerServiceStatus = () => {
   return (
     <div>
-    <ServiceByStatusForCustomer/> 
+    <CustomerServiceStatusLayout/>
     </div>
   )
 }

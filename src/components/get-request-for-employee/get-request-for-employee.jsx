@@ -27,12 +27,14 @@ const GetRequestForEmployee = () => {
     })
   },[])
 
+
   const setValues = (data)=>{
     console.log("Data is",data.customer_id);
     const customer_id = data.customer_id
     const service_category_id = data.service_category_id
     const sub_category_id = data.sub_category_id
     const request_id =data.request_id
+    
     axios({
       method:'post',
       headers:{
@@ -77,11 +79,19 @@ const GetRequestForEmployee = () => {
               <p>Service Category: {data.service_category_name}</p>
               <p>Sub Category: {data.sub_category_name}</p>
               <CustomButton name="Accept" onClick={()=> setValues(data)}/>
+              <div class={style.mapouter}>
+                  <div class={style.gmap_canvas}>  
+            <iframe width="100%" height="100%" id="gmap_canvas" 
+            src= {`https://maps.google.com/maps?q=${data.latitude} ${data.longitude}&t=&z=10&ie=UTF8&iwloc=&output=embed`} frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+            </iframe>
+                  </div>
+              </div>
               </div>
             )
           }
         })
       }
+
     </div>
     </>
   )
