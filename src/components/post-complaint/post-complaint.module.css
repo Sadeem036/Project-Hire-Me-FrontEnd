@@ -1,0 +1,32 @@
+.container{
+    width:100%;
+}
+
+.show{
+    display: flex;
+    margin-top: -10PX;
+}
+.shows{
+    margin-top: -23px;
+    margin-left: -20px;
+}
+.settings{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 400px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+ .setting{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.text{
+    margin-left: 30px;
+} 

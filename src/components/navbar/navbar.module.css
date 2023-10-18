@@ -1,0 +1,113 @@
+.container{
+    display:flex;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid rgb(181, 181, 181);
+    box-shadow: 0px 5px 5px 5px lightgray;
+    font-size: 15px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: -8px;
+  }
+  .container .logo{
+    width: 90px;
+    height: 80px;
+    margin-left: 50px;
+  }
+  .text{
+    margin-left: 10px;
+    margin-bottom: 5px;
+  }
+  .container div p{
+    font-size: 15px;
+    margin-left: 5px;
+  }
+  .ul {
+    list-style-type: none;
+    margin: 15px;
+    padding: 0;
+    overflow: hidden;
+
+  }
+  .li {
+    float: left;
+  }
+  
+  .li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 15px;
+  }
+  
+  .li a:hover:not(.active) {
+    background-color: #9c27b0;
+  }
+
+ .container .nav {
+    justify-content: space-between;
+     align-items: center;
+     width: 70%;
+  }
+.container .nav .ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 650px;
+}
+.container .nav .ul .li a{
+    color: #111;
+}
+.container .nav .ul .li a:hover:not(.active) {
+  background-color: #9c27b0;
+  color: white;
+}
+  .button{
+    display: flex;
+    /* color:black ; */
+    border: 1 px solid #9c27b0
+  }
+  .container .button .customer{
+    background-color:white;
+    border-color: #9c27b0;
+    margin: 5px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    width: 120px;
+    height: 30px;
+    margin-top: 25px;
+    font-size: 20px;
+
+  }
+  .container .button .employee{
+    background-color:#9c27b0;
+    border-color: rgb(99, 00, 99);
+    color: white;
+    width: 120px;
+    height: 30px;
+    margin-top: 25px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+
+  .container .button .customer:hover:not(.active) {
+    background-color: #9c27b0;
+    color:white;
+  }
+
+
+  .container .button .employee:hover:not(.active) {
+    background-color:white;
+    color: #9c27b0;
+  }
+
